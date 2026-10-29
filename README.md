@@ -1,11 +1,8 @@
 # YOUNG — Light & Dark for Typora
 
-A quiet pair of Typora themes for Simplified Chinese and English writing, with soft grayscale colors, serif Chinese typography, Courier New Latin text, and a narrow writing column.
+A quiet pair of themes with soft grayscale colors and the same typography as the YOUNG website: **Adobe Source Han Serif SC ExtraLight** for Chinese, **Courier New** for Latin text. This is not MingLiU.
 
-| Theme | Background | Text |
-| --- | --- | --- |
-| Young Light | `#dedee0` | `#4b4b4e` |
-| Young Dark | `#232324` | `#b7b7ba` |
+The website uses a content subset; Typora bundles the full font from the same pinned source and weight (250), so arbitrary Chinese notes remain covered. The CSS family name is `ZYAN Ming Light`. Chinese headings use the same face with font synthesis disabled; the previous subtle text-stroke enhancement is retained.
 
 ## Typography previews
 
@@ -15,27 +12,27 @@ A quiet pair of Typora themes for Simplified Chinese and English writing, with s
 
 ## Install
 
-1. [Download the theme](https://github.com/ZiyanLo/young-typora/archive/refs/heads/main.zip) and unzip it.
-2. In Typora, open **Preferences → Appearance → Open Theme Folder**.
-3. Copy `young-light.css`, `young-dark.css`, and the entire `young-fonts/` folder into the theme folder.
+1. [Download and unzip](https://github.com/ZiyanLo/young-typora/archive/refs/heads/main.zip).
+2. Open **Typora → Preferences → Appearance → Open Theme Folder**.
+3. Copy `young-light.css`, `young-dark.css`, and the entire `young-fonts/` folder into it.
 4. Restart Typora and select **Young Light** or **Young Dark**.
 
-The font folder is required. ZYAN Ming is a renamed, OFL-licensed WOFF2 conversion of Adobe Source Han Serif SC, supplied in Regular and SemiBold. Courier New is a system fallback and is not redistributed. If Courier New is unavailable, Latin text uses the browser fallback.
+The font folder is required. Courier New is a system font and is not redistributed. The Latin fallback order matches the website.
 
 ## Features
 
-- 15px body text, 1.5 line height, and a 680px writing column.
-- Matched light and dark palettes for writing, tables, code, and sidebar.
-- Consistent sidebar text with clean two-line file previews.
-- Light text-stroke enhancement for slightly heavier text.
-- White-background print layout.
+- Matched light (`#dedee0`) and dark (`#232324`) palettes.
+- 15px body, 1.5 line height, and 680px writing column.
+- Consistent fonts across the editor and sidebar.
+- Two-line sidebar summaries and no top separator.
+- White-background print styles.
 
-Designed and used on macOS. Browser rendering checked; Windows and Linux have not been tested. Native macOS window-title typography is outside the theme CSS.
+Developed on macOS. Windows/Linux have not been tested. Native macOS title-bar fonts are outside theme CSS.
 
-## 简体中文
+## 中文
 
-柔和灰阶的深浅主题，中文使用思源宋体（主题内名 ZYAN Ming），英文优先使用系统 Courier New。安装时请同时复制两个 CSS 和完整 `young-fonts` 文件夹，不能只复制 CSS。侧栏摘要完整显示两行，顶部横向分隔线已隐藏。
+中文与网站一致：思源宋体简体版 ExtraLight，英文为 Courier New。主题内名 `ZYAN Ming Light`，不是细明体 MingLiU。安装时必须同时复制两个 CSS 与完整 `young-fonts/` 文件夹。保留轻微加粗、深浅配色和侧栏修正。
 
-## Font licensing
+## Font license
 
-Bundled fonts are licensed under SIL OFL 1.1. See `young-fonts/OFL.txt` and `young-fonts/NOTICE.txt` for license and source details.
+Bundled fonts: SIL OFL 1.1. See `young-fonts/OFL.txt` and `young-fonts/NOTICE.txt` for the source and license.

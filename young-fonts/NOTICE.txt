@@ -1,8 +1,8 @@
-ZYAN Ming Regular and SemiBold are derived from Adobe Source Han Serif SC.
+ZYAN Ming ExtraLight is derived from Adobe Source Han Serif SC ExtraLight.
 Source commit: 7889f11bf31170b5d092a083b357c8c8130f89e0
 https://github.com/adobe-fonts/source-han-serif
-Outlines and character coverage are unchanged. Internal names have been renamed
-to ZYAN Ming Regular and ZYAN Ming SemiBold. Full-font WOFF2 conversion only.
-Distributed under SIL OFL 1.1; see OFL.txt. No proprietary MingLiU is included.
-The only named families are ZYAN Ming and system Courier New. Real Regular
-(400) and SemiBold (600) faces are supplied for CJK; font synthesis is disabled.
+Outlines and full character coverage are unchanged. Internal names are renamed
+to ZYAN Ming ExtraLight. Converted to WOFF2 under SIL OFL 1.1; see OFL.txt.
+This is the same source and weight (250) used by the website webfont,
+but with full coverage for arbitrary Typora documents instead of a web subset.
+MingLiU is not used or distributed. Courier New is a system font.

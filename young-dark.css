@@ -1,8 +1,7 @@
-/* YOUNG · 简体中文 Typora 主题 · 1.5
+/* YOUNG · 简体中文 Typora 主题 · 1.7
    字体规则来自 https://ziyanlo.github.io/personal-site/
-   与 young-fonts 文件夹配合使用；完整字库，离线可用。 */
-@font-face{font-family:"ZYAN Ming";src:url("young-fonts/young-ming-text.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap;unicode-range:U+2E80-31EF,U+3400-4DBF,U+4E00-9FFF,U+F900-FAFF,U+FF00-FFEF,U+20000-2FA1F}
-@font-face{font-family:"ZYAN Ming";src:url("young-fonts/young-ming-semibold.woff2") format("woff2");font-style:normal;font-weight:600;font-display:swap;unicode-range:U+2E80-31EF,U+3400-4DBF,U+4E00-9FFF,U+F900-FAFF,U+FF00-FFEF,U+20000-2FA1F}
+   与 young-fonts 文件夹配合使用；中文与网站同源同字重：思源宋体 SC ExtraLight；完整字库，离线可用。 */
+@font-face{font-family:"ZYAN Ming Light";src:url("young-fonts/young-ming-text.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap;unicode-range:U+2E80-31EF,U+3400-4DBF,U+4E00-9FFF,U+F900-FAFF,U+FF00-FFEF,U+20000-2FA1F}
 :root {
   --bg-color: #232324; --text-color: #b7b7ba; --muted: #89898d;
   --panel: #29292b; --line: #39393c; --selection: #414144;
@@ -15,7 +14,7 @@
   --item-hover-text-color: #b7b7ba; --search-select-bg-color: #414144;
   --search-select-text-color: #b7b7ba; --rawblock-edit-panel-bd: #29292b;
   --monospace: var(--young-font);
-  --young-font: "ZYAN Ming", "Courier New";
+  --young-font: "ZYAN Ming Light", "Courier New", "Liberation Mono", "Songti TC", "Noto Serif CJK TC", serif;
   color-scheme: dark;
 }
 html { font-size:15px; background:var(--bg-color); }
