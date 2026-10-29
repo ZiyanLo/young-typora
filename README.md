@@ -7,6 +7,12 @@ A quiet pair of Typora themes for Simplified Chinese and English writing, with s
 | Young Light | `#dedee0` | `#4b4b4e` |
 | Young Dark | `#232324` | `#b7b7ba` |
 
+## Typography previews
+
+![Young Light](screenshots/young-light.png)
+
+![Young Dark](screenshots/young-dark.png)
+
 ## Install
 
 1. [Download the theme](https://github.com/ZiyanLo/young-typora/archive/refs/heads/main.zip) and unzip it.
