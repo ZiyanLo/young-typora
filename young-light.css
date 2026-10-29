@@ -1,26 +1,28 @@
-/* YOUNG · 简体中文 Typora 主题 · 1.0
-   灵感：https://ziyanlo.github.io/personal-site/
-   独立主题文件，无需联网或安装附加字体。 */
+/* YOUNG · 简体中文 Typora 主题 · 1.5
+   字体规则来自 https://ziyanlo.github.io/personal-site/
+   与 young-fonts 文件夹配合使用；完整字库，离线可用。 */
+@font-face{font-family:"ZYAN Ming";src:url("young-fonts/young-ming-text.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap;unicode-range:U+2E80-31EF,U+3400-4DBF,U+4E00-9FFF,U+F900-FAFF,U+FF00-FFEF,U+20000-2FA1F}
+@font-face{font-family:"ZYAN Ming";src:url("young-fonts/young-ming-semibold.woff2") format("woff2");font-style:normal;font-weight:600;font-display:swap;unicode-range:U+2E80-31EF,U+3400-4DBF,U+4E00-9FFF,U+F900-FAFF,U+FF00-FFEF,U+20000-2FA1F}
 :root {
-  --bg-color: #dededb; --text-color: #454542; --muted: #70706b;
-  --panel: #d5d5d1; --line: #bcbcb6; --selection: #c4c4bc;
-  --md-char-color: #70706b; --meta-content-color: #70706b;
-  --primary-color: #454542; --primary-btn-border-color: #454542;
-  --primary-btn-text-color: #dededb; --window-border: 1px solid #bcbcb6;
-  --side-bar-bg-color: #dededb; --control-text-color: #454542;
-  --active-file-bg-color: #d5d5d1; --active-file-text-color: #454542;
-  --active-file-border-color: #70706b; --item-hover-bg-color: #d5d5d1;
-  --item-hover-text-color: #454542; --search-select-bg-color: #c4c4bc;
-  --search-select-text-color: #454542; --rawblock-edit-panel-bd: #d5d5d1;
-  --monospace: "Courier New", "Liberation Mono", "Noto Sans Mono CJK SC", "Microsoft YaHei", monospace;
-  --young-font: "Courier New", "Liberation Mono", "MingLiU", "細明體", "PMingLiU", "新細明體", "Songti SC", "SimSun", serif;
+  --bg-color: #dedee0; --text-color: #4b4b4e; --muted: #696969;
+  --panel: #d8d8da; --line: #c4c4c7; --selection: #cacacd;
+  --md-char-color: #696969; --meta-content-color: #696969;
+  --primary-color: #4b4b4e; --primary-btn-border-color: #4b4b4e;
+  --primary-btn-text-color: #dedee0; --window-border: 1px solid #c4c4c7;
+  --side-bar-bg-color: #dedee0; --control-text-color: #4b4b4e;
+  --active-file-bg-color: #d8d8da; --active-file-text-color: #4b4b4e;
+  --active-file-border-color: #696969; --item-hover-bg-color: #d8d8da;
+  --item-hover-text-color: #4b4b4e; --search-select-bg-color: #cacacd;
+  --search-select-text-color: #4b4b4e; --rawblock-edit-panel-bd: #d8d8da;
+  --monospace: var(--young-font);
+  --young-font: "ZYAN Ming", "Courier New";
   color-scheme: light;
 }
-html { font-size:16px; background:var(--bg-color); }
-body { margin:0; background:var(--bg-color); color:var(--text-color); font-family:var(--young-font); line-height:1.85; -webkit-font-smoothing:antialiased; }
-#write { max-width:680px; margin:0 auto; padding:64px 48px 100px; font-size:1rem; overflow-wrap:break-word; }
+html { font-size:15px; background:var(--bg-color); }
+body { margin:0; background:var(--bg-color); color:var(--text-color); font-family:var(--young-font); font-weight:400; line-height:1.5; letter-spacing:0; font-synthesis:none; -webkit-text-stroke:0.12px currentColor; }
+#write { font-family:var(--young-font); max-width:680px; margin:0 auto; padding:64px 48px 100px; font-size:1rem; overflow-wrap:break-word; }
 #write p { margin:0 0 1.45em; }
-#write h1,#write h2,#write h3,#write h4,#write h5,#write h6 { color:var(--text-color); font-family:var(--young-font); font-weight:700; line-height:1.5; border:0; padding:0; }
+#write h1,#write h2,#write h3,#write h4,#write h5,#write h6 { color:var(--text-color); font-family:var(--young-font); font-weight:600; line-height:1.5; border:0; padding:0; }
 #write h1 { font-size:1.65rem; letter-spacing:-.035em; margin:0 0 1.8em; }
 #write h2 { font-size:1.25rem; margin:2.4em 0 1em; }
 #write h3 { font-size:1.1rem; margin:2em 0 .9em; }
@@ -29,7 +31,7 @@ body { margin:0; background:var(--bg-color); color:var(--text-color); font-famil
 a { color:inherit; text-decoration:underline; text-underline-offset:4px; text-decoration-thickness:1px; }
 a:hover { color:var(--muted); }
 ::selection { background:var(--selection); }
-#write strong { font-weight:700; }
+#write strong { font-weight:600; }
 #write em { font-style:italic; }
 #write del { color:var(--muted); }
 #write mark { background:var(--selection); color:var(--text-color); padding:.08em .2em; }
@@ -52,13 +54,13 @@ a:hover { color:var(--muted); }
 .CodeMirror-linenumber { color:var(--muted); }
 .CodeMirror-cursor { border-left-color:var(--text-color); }
 .cm-s-inner .cm-comment { color:var(--muted); font-style:italic; }
-.cm-s-inner .cm-keyword,.cm-s-inner .cm-atom,.cm-s-inner .cm-builtin { color:var(--text-color); font-weight:700; }
+.cm-s-inner .cm-keyword,.cm-s-inner .cm-atom,.cm-s-inner .cm-builtin { color:var(--text-color); font-weight:600; }
 .cm-s-inner .cm-string,.cm-s-inner .cm-string-2 { color:var(--muted); }
 .cm-s-inner .cm-number,.cm-s-inner .cm-def,.cm-s-inner .cm-variable,.cm-s-inner .cm-variable-2,.cm-s-inner .cm-property,.cm-s-inner .cm-operator,.cm-s-inner .cm-tag,.cm-s-inner .cm-attribute,.cm-s-inner .cm-qualifier { color:var(--text-color); }
 .cm-s-inner .cm-error { color:var(--text-color); text-decoration:underline wavy; }
 #write table { width:100%; border-collapse:collapse; margin:1.6em 0; font-size:.9rem; }
 #write th,#write td { padding:.65em .75em; border:1px solid var(--line); text-align:left; }
-#write th { background:var(--panel); font-weight:700; }
+#write th { background:var(--panel); font-weight:600; }
 #write tr { background:transparent; }
 #write img { max-width:100%; height:auto; }
 #write .md-image > .md-meta { color:var(--muted); }
@@ -74,11 +76,11 @@ a:hover { color:var(--muted); }
 #write .md-alert { border-left:2px solid var(--muted); color:var(--text-color); padding:1em 1.2em; background:var(--panel); }
 #write .md-alert-text { color:var(--text-color); }
 #typora-sidebar { background:var(--bg-color); color:var(--text-color); border-right:1px solid var(--line); font-family:var(--young-font); font-size:.85rem; }
-.sidebar-tabs { border-bottom:1px solid var(--line); }
+.sidebar-tabs { border-bottom:0; box-shadow:none; }
 .file-node-content:hover,.file-list-item:hover,.outline-item:hover { background:var(--panel); }
 .file-node-content.active,.file-list-item.active { background:var(--panel); color:var(--text-color); }
 .outline-label { color:inherit; }
-.outline-item-active > .outline-item { color:var(--text-color); font-weight:700; }
+.outline-item-active > .outline-item { color:var(--text-color); font-weight:600; }
 #typora-source { color:var(--text-color); }
 #typora-source .CodeMirror-lines { max-width:680px; margin:auto; }
 #typora-source .CodeMirror { background:var(--bg-color); font-family:var(--monospace); }
@@ -94,4 +96,58 @@ footer,.typora-quick-open-item,.dropdown-menu { font-family:var(--young-font); }
   #write h1,#write h2,#write h3,#write h4 { break-after:avoid; }
   #write pre,#write blockquote,#write tr,#write img { break-inside:avoid; }
   #write thead { display:table-header-group; }
+}
+
+/* Explicit UI text rules: Typora assigns separate fonts to these elements.
+   Keep icon fonts and mathematical notation independent. */
+html {
+  font-family:var(--young-font);
+}
+#typora-sidebar .file-list-item-file-name,
+#typora-sidebar .file-list-item-file-ext-part,
+#typora-sidebar .file-list-item-summary,
+#typora-sidebar .file-list-item-summary *,
+#typora-sidebar .file-list-item-time,
+#typora-sidebar .file-list-item-parent-loc,
+#typora-sidebar .file-node-title,
+#typora-sidebar .outline-label,
+#typora-sidebar .sidebar-tab,
+#typora-sidebar .sidebar-footer-main-item,
+.ty-search-item-line,
+.ty-search-item-line *,
+#top-titlebar,
+#title-text,
+#title-text span,
+.typora-quick-open-item-title,
+.typora-quick-open-item-path {
+  font-family:var(--young-font) !important;
+  font-synthesis:none;
+  -webkit-text-stroke:0.12px currentColor;
+}
+#typora-sidebar .file-list-item-file-name,
+#typora-sidebar .file-node-title,
+#typora-sidebar .file-list-item-summary strong,
+#typora-sidebar .file-list-item-summary b {
+  font-weight:600;
+}
+#typora-sidebar .file-list-item-summary,
+#typora-sidebar .file-list-item-time,
+#typora-sidebar .file-list-item-parent-loc {
+  font-weight:400;
+}
+
+/* Two complete preview lines; the stock 38px box leaks the third line. */
+#typora-sidebar .file-list-item-summary {
+  line-height:18px;
+  height:36px;
+  max-height:36px;
+  padding-top:0;
+  padding-bottom:0;
+  overflow:hidden;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}
+#typora-sidebar .file-list-item-summary * {
+  line-height:inherit;
 }
