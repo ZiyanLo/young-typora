@@ -123,12 +123,14 @@ html {
   font-synthesis:none;
   -webkit-text-stroke:0.12px currentColor;
 }
-#typora-sidebar .file-list-item-file-name,
-#typora-sidebar .file-node-title,
 #typora-sidebar .file-list-item-summary strong,
 #typora-sidebar .file-list-item-summary b {
   font-weight:600;
 }
+/* Regular sidebar names keep Courier New filenames and extensions light. */
+#typora-sidebar .file-list-item-file-name,
+#typora-sidebar .file-list-item-file-ext-part,
+#typora-sidebar .file-node-title,
 #typora-sidebar .file-list-item-summary,
 #typora-sidebar .file-list-item-time,
 #typora-sidebar .file-list-item-parent-loc {

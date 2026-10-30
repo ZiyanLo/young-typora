@@ -24,7 +24,7 @@ The font folder is required. Courier New is a system font and is not redistribut
 - Matched light (`#dedee0`) and dark (`#232324`) palettes.
 - 15px body, 1.5 line height, and 680px writing column.
 - Consistent fonts across the editor and sidebar.
-- Two-line sidebar summaries and no top separator.
+- Two-line sidebar summaries and no top separator. Sidebar filenames, folder names, and extensions use regular weight to keep Courier New light.
 - White-background print styles.
 
 Developed on macOS. Windows/Linux have not been tested. Native macOS title-bar fonts are outside theme CSS.
